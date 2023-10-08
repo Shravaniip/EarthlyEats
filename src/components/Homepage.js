@@ -3,11 +3,12 @@ import '../components/Homepage.css';
 import ProductCard from './ProductCard';
 import ContactUs from './Contactus';
 
-function Homepage() { const goToCartPage = () => {
-    // Change the URL to the cart page
-    window.location.href = '/Cart';
-  };
-    
+function Homepage() {
+    const goToCartPage = () => {
+
+
+    };
+
     const products = [
         // {
         //     id: 1,
@@ -15,31 +16,36 @@ function Homepage() { const goToCartPage = () => {
         //     imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
         // },
         {
-            id: 2,
-            productName: 'Product 2',
+            id: 1,
+            productName: 'Plant Based Peppy Popcorn',
             imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
+        },
+        {
+            id: 2,
+            productName: 'Plant Based Chicken Keema',
+            imageUrl: './images/keema.png', // Replace with the actual image URL
         },
         {
             id: 3,
-            productName: 'Product 2',
-            imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
+            productName: 'Plant Based Mutton Seekh Kebab',
+            imageUrl: './images/kebab.png', // Replace with the actual image URL
         },
         {
             id: 4,
-            productName: 'Product 2',
-            imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
+            productName: 'Plant Based Chicken Nuggets',
+            imageUrl: './images/nuggets.png', // Replace with the actual image URL
         },
         {
-            id: 2,
-            productName: 'Product 2',
-            imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
+            id: 5,
+            productName: 'Plant Based Chicken Momo',
+            imageUrl: './images/momo.png', // Replace with the actual image URL
         },
         {
-            id: 2,
-            productName: 'Product 2',
-            imageUrl: './images/plantbasedpeppypopcorn.png', // Replace with the actual image URL
+            id: 6,
+            productName: 'Plant Based Chicken Momo',
+            imageUrl: './images/pepperoni.png', // Replace with the actual image URL
         },
-        
+
         // Add more product objects as needed
     ];
     return (
@@ -68,11 +74,11 @@ function Homepage() { const goToCartPage = () => {
 
                     </div>
                     <form className="form-inline d-flex">
-                    {/* <a href="./Cart.js" > */}
+                        {/* <a href="./Cart.js" > */}
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-light my-2 my-sm-0" type="submit"><img className="search" src="https://cdn-icons-png.flaticon.com/128/2951/2951199.png" alt="search" onClick={goToCartPage} ></img></button>
                         {/* </a> */}
-                        </form>
+                    </form>
                     <form className="form-inline d-flex">
 
                         <button className="btn btn-outline-light my-2 my-sm-0" type="submit"><img className="search" src="https://cdn-icons-png.flaticon.com/128/833/833314.png" alt="cart" onClick={goToCartPage} ></img></button>
@@ -80,6 +86,7 @@ function Homepage() { const goToCartPage = () => {
 
                 </div>
             </nav>
+
             <div className="slogan d-flex justify-content-center">
                 <img src="./images/Slogan.png" alt="slogan" style={{ marginBottom: '20px' }}
 
@@ -97,7 +104,7 @@ function Homepage() { const goToCartPage = () => {
                 <div className="product">
 
 
-                    
+
                     <div className="row">
                         {products.map((product) => (
                             <div className="col-md-4" key={product.id}>
@@ -108,24 +115,24 @@ function Homepage() { const goToCartPage = () => {
                 </div>
             </div>
 
-<div>
-<form className='form'>
-  <div>
-    <label htmlFor="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-  </div>
-  <div>
-    <label htmlFor="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-  </div>
-  <div>
-    <label htmlFor="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-  </div>
-  <button type="submit">Submit</button>
-</form>
-    
-        </div>
+            <div>
+                <form className='form'>
+                    <div>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
         </div>
     );
 }

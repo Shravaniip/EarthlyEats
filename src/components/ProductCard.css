@@ -23,3 +23,8 @@
     background-color:#FFB3B3; /* Change the background color on hover */
    
   }
+  .card-title{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+
+  }
