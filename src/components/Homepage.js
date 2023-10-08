@@ -87,19 +87,23 @@ function Homepage() {
                 </div>
             </nav>
 
-            <div className="slogan d-flex justify-content-center">
+            <div className="slogan d-flex justify-content-center ">
                 <img src="./images/Slogan.png" alt="slogan" style={{ marginBottom: '20px' }}
 
 
                 ></img>
 
             </div>
-            <div className="appetite d-flex justify-content-center">
+            <div className='yellowbg'>
+
+            <div className="appetite d-flex justify-content-center ">
                 <img className="appetite-img" src="./images/appetite.png" alt="slogan"
                     width="550" height="70" style={{ marginBottom: '20px' }}
-                ></img>
+                    ></img>
 
             </div>
+                    
+
             <div className="container">
                 <div className="product">
 
@@ -113,6 +117,7 @@ function Homepage() {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
 
             <div>
